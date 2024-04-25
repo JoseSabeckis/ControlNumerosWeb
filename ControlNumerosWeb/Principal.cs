@@ -18,6 +18,7 @@ namespace ControlNumerosWeb
         HtmlWeb htmlWeb;
         List<NumberControl> lista;
         List<Salidor> listaSalidor;
+        List<Estadistica> listaFinal;
         bool bandera = true;
 
         public Principal()
@@ -26,9 +27,11 @@ namespace ControlNumerosWeb
 
             lista = new List<NumberControl>();
             listaSalidor = new List<Salidor>();
+            listaFinal = new List<Estadistica>();
 
             ActualizarGrilla();
             ActualizarGrillaSalidores();
+            GrillaFinal();
         }
 
         public void BanderaTrue()
@@ -61,6 +64,7 @@ namespace ControlNumerosWeb
             btnControlar.Enabled = false;
             txtPaginaWeb.Enabled = false;
             nudSegundos.Enabled = false;
+            BtnFinal.Enabled = false;
 
             lblTiempo.Text = "Control Repetitivo...";
             ControlRepetitivo();
@@ -107,6 +111,7 @@ namespace ControlNumerosWeb
             btnControlar.Enabled = true;
             txtPaginaWeb.Enabled = true;
             nudSegundos.Enabled = true;
+            BtnFinal.Enabled = true;
         }
 
         public string VerificarNumero()
@@ -172,6 +177,22 @@ namespace ControlNumerosWeb
             
         }
 
+        public void VerProbabilidades()
+        {
+            foreach (var item in listaSalidor)
+            {
+
+                var n = new Estadistica
+                {
+                    Numero = item.Numero,
+                    Probabilidad = (listaSalidor.Count() * item.Salio).ToString("N4")
+                };
+
+                listaFinal.Add(n);
+
+            }        
+        }
+
         public void Segundos()
         {
             Thread.Sleep(20000);
@@ -223,6 +244,24 @@ namespace ControlNumerosWeb
             var num = random.Next(0, (int)nudMax.Value);
 
             lblAleatorio.Text = $"{num} -";
+        }
+
+        private void BtnFinal_Click(object sender, EventArgs e)
+        {
+            VerProbabilidades();
+            GrillaFinal();
+        }
+
+        public void GrillaFinal()
+        {
+            dgvGrillaEstadisticas.DataSource = listaFinal.ToList();
+            dgvGrillaEstadisticas.Columns["Numero"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvGrillaEstadisticas.Columns["Numero"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvGrillaEstadisticas.Columns["Numero"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
+            dgvGrillaEstadisticas.Columns["Probabilidad"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            dgvGrillaEstadisticas.Columns["Probabilidad"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            dgvGrillaEstadisticas.Columns["Probabilidad"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
         }
     }
 }

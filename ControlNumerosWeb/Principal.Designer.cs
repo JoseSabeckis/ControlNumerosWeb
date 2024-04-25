@@ -53,6 +53,8 @@ namespace ControlNumerosWeb
             this.panel6 = new System.Windows.Forms.Panel();
             this.nudMax = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
+            this.dgvGrillaEstadisticas = new System.Windows.Forms.DataGridView();
+            this.BtnFinal = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrilla)).BeginInit();
@@ -63,6 +65,7 @@ namespace ControlNumerosWeb
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrillaEstadisticas)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,7 +84,7 @@ namespace ControlNumerosWeb
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(901, 141);
+            this.panel1.Size = new System.Drawing.Size(1051, 141);
             this.panel1.TabIndex = 0;
             // 
             // lblTiempo
@@ -119,7 +122,7 @@ namespace ControlNumerosWeb
             this.btnControlar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnControlar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnControlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnControlar.Location = new System.Drawing.Point(720, 8);
+            this.btnControlar.Location = new System.Drawing.Point(870, 15);
             this.btnControlar.Name = "btnControlar";
             this.btnControlar.Size = new System.Drawing.Size(168, 89);
             this.btnControlar.TabIndex = 2;
@@ -134,7 +137,7 @@ namespace ControlNumerosWeb
             this.txtPaginaWeb.BackColor = System.Drawing.SystemColors.Info;
             this.txtPaginaWeb.Location = new System.Drawing.Point(140, 15);
             this.txtPaginaWeb.Name = "txtPaginaWeb";
-            this.txtPaginaWeb.Size = new System.Drawing.Size(562, 29);
+            this.txtPaginaWeb.Size = new System.Drawing.Size(712, 29);
             this.txtPaginaWeb.TabIndex = 1;
             // 
             // label1
@@ -155,7 +158,7 @@ namespace ControlNumerosWeb
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 141);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(901, 379);
+            this.panel2.Size = new System.Drawing.Size(1051, 447);
             this.panel2.TabIndex = 1;
             // 
             // dgvGrilla
@@ -167,7 +170,7 @@ namespace ControlNumerosWeb
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.ReadOnly = true;
             this.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrilla.Size = new System.Drawing.Size(279, 375);
+            this.dgvGrilla.Size = new System.Drawing.Size(279, 443);
             this.dgvGrilla.TabIndex = 0;
             // 
             // lblSegundos
@@ -175,7 +178,7 @@ namespace ControlNumerosWeb
             this.lblSegundos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSegundos.AutoSize = true;
             this.lblSegundos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblSegundos.Location = new System.Drawing.Point(448, 71);
+            this.lblSegundos.Location = new System.Drawing.Point(598, 71);
             this.lblSegundos.Name = "lblSegundos";
             this.lblSegundos.Size = new System.Drawing.Size(173, 22);
             this.lblSegundos.TabIndex = 6;
@@ -186,7 +189,7 @@ namespace ControlNumerosWeb
             this.nudSegundos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudSegundos.BackColor = System.Drawing.SystemColors.Info;
             this.nudSegundos.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSegundos.Location = new System.Drawing.Point(627, 64);
+            this.nudSegundos.Location = new System.Drawing.Point(777, 64);
             this.nudSegundos.Maximum = new decimal(new int[] {
             90000000,
             0,
@@ -214,7 +217,7 @@ namespace ControlNumerosWeb
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(279, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(618, 375);
+            this.panel3.Size = new System.Drawing.Size(768, 443);
             this.panel3.TabIndex = 1;
             // 
             // dgvGrillaSalidores
@@ -227,7 +230,7 @@ namespace ControlNumerosWeb
             this.dgvGrillaSalidores.Name = "dgvGrillaSalidores";
             this.dgvGrillaSalidores.ReadOnly = true;
             this.dgvGrillaSalidores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrillaSalidores.Size = new System.Drawing.Size(279, 367);
+            this.dgvGrillaSalidores.Size = new System.Drawing.Size(279, 435);
             this.dgvGrillaSalidores.TabIndex = 2;
             // 
             // label3
@@ -258,7 +261,7 @@ namespace ControlNumerosWeb
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(279, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(331, 31);
+            this.label5.Size = new System.Drawing.Size(481, 31);
             this.label5.TabIndex = 0;
             this.label5.Text = "Estadisticas";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -267,24 +270,26 @@ namespace ControlNumerosWeb
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel4.Controls.Add(this.dgvGrillaEstadisticas);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.dgvGrillaSalidores);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(614, 371);
+            this.panel4.Size = new System.Drawing.Size(764, 439);
             this.panel4.TabIndex = 0;
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel5.Controls.Add(this.BtnFinal);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(279, 267);
+            this.panel5.Location = new System.Drawing.Point(279, 335);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(331, 100);
+            this.panel5.Size = new System.Drawing.Size(481, 100);
             this.panel5.TabIndex = 3;
             // 
             // label6
@@ -321,7 +326,7 @@ namespace ControlNumerosWeb
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.lblAleatorio);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(105, 0);
+            this.panel6.Location = new System.Drawing.Point(255, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(222, 96);
             this.panel6.TabIndex = 4;
@@ -364,12 +369,38 @@ namespace ControlNumerosWeb
             this.label7.TabIndex = 9;
             this.label7.Text = "Max";
             // 
+            // dgvGrillaEstadisticas
+            // 
+            this.dgvGrillaEstadisticas.BackgroundColor = System.Drawing.Color.GreenYellow;
+            this.dgvGrillaEstadisticas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGrillaEstadisticas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvGrillaEstadisticas.Location = new System.Drawing.Point(279, 31);
+            this.dgvGrillaEstadisticas.MultiSelect = false;
+            this.dgvGrillaEstadisticas.Name = "dgvGrillaEstadisticas";
+            this.dgvGrillaEstadisticas.ReadOnly = true;
+            this.dgvGrillaEstadisticas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvGrillaEstadisticas.Size = new System.Drawing.Size(481, 304);
+            this.dgvGrillaEstadisticas.TabIndex = 4;
+            // 
+            // BtnFinal
+            // 
+            this.BtnFinal.BackColor = System.Drawing.Color.Lime;
+            this.BtnFinal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BtnFinal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnFinal.Location = new System.Drawing.Point(0, 0);
+            this.BtnFinal.Name = "BtnFinal";
+            this.BtnFinal.Size = new System.Drawing.Size(255, 96);
+            this.BtnFinal.TabIndex = 5;
+            this.BtnFinal.Text = "Ver Probabilidades";
+            this.BtnFinal.UseVisualStyleBackColor = false;
+            this.BtnFinal.Click += new System.EventHandler(this.BtnFinal_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(901, 520);
+            this.ClientSize = new System.Drawing.Size(1051, 588);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -390,6 +421,7 @@ namespace ControlNumerosWeb
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudMax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGrillaEstadisticas)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -419,6 +451,8 @@ namespace ControlNumerosWeb
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.NumericUpDown nudMax;
+        private System.Windows.Forms.DataGridView dgvGrillaEstadisticas;
+        private System.Windows.Forms.Button BtnFinal;
     }
 }
 

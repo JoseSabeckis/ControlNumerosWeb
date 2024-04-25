@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Estadistica.cs" />
     <Compile Include="Mensaje.cs">
       <SubType>Form</SubType>
     </Compile>
