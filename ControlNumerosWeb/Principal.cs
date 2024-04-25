@@ -98,6 +98,7 @@ namespace ControlNumerosWeb
 
                     ActualizarGrilla();
                     ActualizarGrillaSalidores();
+                    Colores();
                 }
                 else
                 {
@@ -191,6 +192,43 @@ namespace ControlNumerosWeb
                 listaFinal.Add(n);
 
             }        
+        }
+
+        public void Colores()
+        {
+            int rojos = 0;
+            int negros = 0;
+            int ceros = 0;
+
+            foreach (var item in listaSalidor)
+            {
+                var x = item.Numero;
+
+                if (x == 3 || x == 1 || x == 5 || x == 9 || x == 7 || x == 12 || x == 14 ||
+                    x == 18 || x == 16 || x == 21 || x == 19 || x == 23 || x == 27 || x == 25 || x == 30 ||
+                    x == 32 || x == 36 || x == 34)
+                {
+                    rojos += item.Salio;
+                }
+
+                if (x == 2 || x == 6 || x == 4 || x == 8 || x == 11 || x == 10 || x == 15 ||
+                    x == 13 || x == 17 || x == 20 || x == 24 || x == 22 || x == 26 || x == 29 || x == 28 ||
+                    x == 33 || x == 31 || x == 35)
+                {
+                    negros += item.Salio;
+                }
+
+                if (x == 0)
+                {
+                    ceros += item.Salio;
+                }
+
+            }
+
+            lblRojos.Text = $"Rojos: {rojos}";
+            lblNegros.Text = $"Negros: {negros}";
+            lblCero.Text = $"Ceros: {ceros}";
+
         }
 
         public void Segundos()
