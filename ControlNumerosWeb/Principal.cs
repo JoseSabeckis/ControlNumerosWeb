@@ -186,7 +186,7 @@ namespace ControlNumerosWeb
                 var n = new Estadistica
                 {
                     Numero = item.Numero,
-                    Probabilidad = (listaSalidor.Count() * item.Salio).ToString("N4")
+                    Probabilidad = $"{item.Salio / nudMax.Value:00.00000}" //(listaSalidor.Count() / item.Salio).ToString("N4")
                 };
 
                 listaFinal.Add(n);
@@ -292,7 +292,7 @@ namespace ControlNumerosWeb
 
         public void GrillaFinal()
         {
-            dgvGrillaEstadisticas.DataSource = listaFinal.ToList();
+            dgvGrillaEstadisticas.DataSource = listaFinal.OrderByDescending( x => x.Probabilidad ).ToList();
             dgvGrillaEstadisticas.Columns["Numero"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             dgvGrillaEstadisticas.Columns["Numero"].HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
             dgvGrillaEstadisticas.Columns["Numero"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;

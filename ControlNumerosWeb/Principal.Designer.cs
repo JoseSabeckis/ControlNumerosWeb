@@ -90,7 +90,7 @@ namespace ControlNumerosWeb
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1051, 141);
+            this.panel1.Size = new System.Drawing.Size(1161, 141);
             this.panel1.TabIndex = 0;
             // 
             // label4
@@ -118,7 +118,7 @@ namespace ControlNumerosWeb
             this.nudSegundos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.nudSegundos.BackColor = System.Drawing.SystemColors.Info;
             this.nudSegundos.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudSegundos.Location = new System.Drawing.Point(777, 92);
+            this.nudSegundos.Location = new System.Drawing.Point(887, 92);
             this.nudSegundos.Maximum = new decimal(new int[] {
             90000000,
             0,
@@ -143,7 +143,7 @@ namespace ControlNumerosWeb
             this.lblSegundos.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSegundos.AutoSize = true;
             this.lblSegundos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.lblSegundos.Location = new System.Drawing.Point(679, 64);
+            this.lblSegundos.Location = new System.Drawing.Point(789, 64);
             this.lblSegundos.Name = "lblSegundos";
             this.lblSegundos.Size = new System.Drawing.Size(173, 22);
             this.lblSegundos.TabIndex = 6;
@@ -152,9 +152,9 @@ namespace ControlNumerosWeb
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.BackColor = System.Drawing.Color.Gray;
+            this.lblTiempo.BackColor = System.Drawing.Color.Black;
             this.lblTiempo.ForeColor = System.Drawing.Color.Red;
-            this.lblTiempo.Location = new System.Drawing.Point(265, 72);
+            this.lblTiempo.Location = new System.Drawing.Point(265, 71);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(15, 22);
             this.lblTiempo.TabIndex = 5;
@@ -185,7 +185,7 @@ namespace ControlNumerosWeb
             this.btnControlar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnControlar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnControlar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnControlar.Location = new System.Drawing.Point(870, 15);
+            this.btnControlar.Location = new System.Drawing.Point(980, 15);
             this.btnControlar.Name = "btnControlar";
             this.btnControlar.Size = new System.Drawing.Size(168, 110);
             this.btnControlar.TabIndex = 2;
@@ -200,7 +200,7 @@ namespace ControlNumerosWeb
             this.txtPaginaWeb.BackColor = System.Drawing.SystemColors.Info;
             this.txtPaginaWeb.Location = new System.Drawing.Point(140, 15);
             this.txtPaginaWeb.Name = "txtPaginaWeb";
-            this.txtPaginaWeb.Size = new System.Drawing.Size(712, 29);
+            this.txtPaginaWeb.Size = new System.Drawing.Size(822, 29);
             this.txtPaginaWeb.TabIndex = 1;
             // 
             // label1
@@ -221,7 +221,7 @@ namespace ControlNumerosWeb
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 141);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1051, 447);
+            this.panel2.Size = new System.Drawing.Size(1161, 451);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -232,7 +232,7 @@ namespace ControlNumerosWeb
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(279, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(768, 443);
+            this.panel3.Size = new System.Drawing.Size(878, 447);
             this.panel3.TabIndex = 1;
             // 
             // panel4
@@ -246,7 +246,7 @@ namespace ControlNumerosWeb
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(764, 439);
+            this.panel4.Size = new System.Drawing.Size(874, 443);
             this.panel4.TabIndex = 0;
             // 
             // dgvGrillaEstadisticas
@@ -259,7 +259,7 @@ namespace ControlNumerosWeb
             this.dgvGrillaEstadisticas.Name = "dgvGrillaEstadisticas";
             this.dgvGrillaEstadisticas.ReadOnly = true;
             this.dgvGrillaEstadisticas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrillaEstadisticas.Size = new System.Drawing.Size(481, 304);
+            this.dgvGrillaEstadisticas.Size = new System.Drawing.Size(591, 308);
             this.dgvGrillaEstadisticas.TabIndex = 4;
             // 
             // panel5
@@ -269,9 +269,9 @@ namespace ControlNumerosWeb
             this.panel5.Controls.Add(this.BtnFinal);
             this.panel5.Controls.Add(this.panel6);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel5.Location = new System.Drawing.Point(279, 335);
+            this.panel5.Location = new System.Drawing.Point(279, 339);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(481, 100);
+            this.panel5.Size = new System.Drawing.Size(591, 100);
             this.panel5.TabIndex = 3;
             // 
             // BtnFinal
@@ -281,7 +281,7 @@ namespace ControlNumerosWeb
             this.BtnFinal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnFinal.Location = new System.Drawing.Point(0, 0);
             this.BtnFinal.Name = "BtnFinal";
-            this.BtnFinal.Size = new System.Drawing.Size(255, 96);
+            this.BtnFinal.Size = new System.Drawing.Size(365, 96);
             this.BtnFinal.TabIndex = 5;
             this.BtnFinal.Text = "Ver Probabilidades";
             this.BtnFinal.UseVisualStyleBackColor = false;
@@ -296,7 +296,7 @@ namespace ControlNumerosWeb
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.lblAleatorio);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(255, 0);
+            this.panel6.Location = new System.Drawing.Point(365, 0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(222, 96);
             this.panel6.TabIndex = 4;
@@ -372,7 +372,7 @@ namespace ControlNumerosWeb
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(279, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(481, 31);
+            this.label5.Size = new System.Drawing.Size(591, 31);
             this.label5.TabIndex = 0;
             this.label5.Text = "Estadisticas";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -387,7 +387,7 @@ namespace ControlNumerosWeb
             this.dgvGrillaSalidores.Name = "dgvGrillaSalidores";
             this.dgvGrillaSalidores.ReadOnly = true;
             this.dgvGrillaSalidores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrillaSalidores.Size = new System.Drawing.Size(279, 435);
+            this.dgvGrillaSalidores.Size = new System.Drawing.Size(279, 439);
             this.dgvGrillaSalidores.TabIndex = 2;
             // 
             // dgvGrilla
@@ -399,52 +399,52 @@ namespace ControlNumerosWeb
             this.dgvGrilla.Name = "dgvGrilla";
             this.dgvGrilla.ReadOnly = true;
             this.dgvGrilla.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvGrilla.Size = new System.Drawing.Size(279, 443);
+            this.dgvGrilla.Size = new System.Drawing.Size(279, 447);
             this.dgvGrilla.TabIndex = 0;
             // 
             // lblRojos
             // 
             this.lblRojos.AutoSize = true;
             this.lblRojos.BackColor = System.Drawing.Color.Red;
-            this.lblRojos.Location = new System.Drawing.Point(451, 67);
+            this.lblRojos.Location = new System.Drawing.Point(561, 103);
             this.lblRojos.Name = "lblRojos";
-            this.lblRojos.Size = new System.Drawing.Size(56, 22);
+            this.lblRojos.Size = new System.Drawing.Size(76, 22);
             this.lblRojos.TabIndex = 5;
-            this.lblRojos.Text = "Rojos";
+            this.lblRojos.Text = "Rojos: 0";
             // 
             // lblNegros
             // 
             this.lblNegros.AutoSize = true;
             this.lblNegros.BackColor = System.Drawing.Color.Black;
             this.lblNegros.ForeColor = System.Drawing.SystemColors.Control;
-            this.lblNegros.Location = new System.Drawing.Point(451, 103);
+            this.lblNegros.Location = new System.Drawing.Point(665, 103);
             this.lblNegros.Name = "lblNegros";
-            this.lblNegros.Size = new System.Drawing.Size(70, 22);
+            this.lblNegros.Size = new System.Drawing.Size(90, 22);
             this.lblNegros.TabIndex = 6;
-            this.lblNegros.Text = "Negros";
+            this.lblNegros.Text = "Negros: 0";
             // 
             // lblCero
             // 
             this.lblCero.AutoSize = true;
             this.lblCero.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblCero.Location = new System.Drawing.Point(582, 103);
+            this.lblCero.Location = new System.Drawing.Point(783, 103);
             this.lblCero.Name = "lblCero";
-            this.lblCero.Size = new System.Drawing.Size(48, 22);
+            this.lblCero.Size = new System.Drawing.Size(76, 22);
             this.lblCero.TabIndex = 11;
-            this.lblCero.Text = "Cero";
+            this.lblCero.Text = "Ceros: 0";
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1051, 588);
+            this.ClientSize = new System.Drawing.Size(1161, 592);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Microsoft YaHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
-            this.MinimumSize = new System.Drawing.Size(1067, 627);
+            this.MinimumSize = new System.Drawing.Size(1177, 631);
             this.Name = "Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Control de Numeros";
